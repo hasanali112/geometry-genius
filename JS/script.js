@@ -113,3 +113,34 @@ document.getElementById("pentagon-calculate-btn").addEventListener("click", func
     `;
     showCalculation.appendChild(tr);
 })
+
+
+
+document.getElementById("ellipse-calculate-btn").addEventListener("click", function(){
+
+   // for base value
+ const baseValue= document.getElementById("ellipse-base-value");
+ const baseValueString= baseValue.value;
+ const baseValueNumber= parseFloat(baseValueString);
+ baseValue.value="";
+
+ // for height value
+ const heightVlue= document.getElementById("ellipse-height-value");
+ const heightVlueString= heightVlue.value;
+ const heightVlueNumber= parseFloat(heightVlueString);
+ heightVlue.value= "";
+ 
+ // base and height multipication
+ const areaCalTotal= 3.14 * baseValueNumber * heightVlueNumber;
+
+ //  show the value in area calculation
+ const showCalculation = document.getElementById('area-calculation');
+ const tr = document.createElement('tr');
+ tr.innerHTML = `
+ <td>6.</td>
+ <td>Ellipse</td>
+ <td>${areaCalTotal} Cm<sup>2</sup></td>
+ `;
+ showCalculation.appendChild(tr);
+
+})

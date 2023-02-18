@@ -1,43 +1,6 @@
 
-function getArea(baseValueId, heightVlueId){
- // for base value
- const baseValue= document.getElementById(baseValueId);
- const baseValueString= baseValue.value;
- const baseValueNumber= parseFloat(baseValueString);
- baseValue.value="";
 
- // for height value
- const heightVlue= document.getElementById(heightVlueId);
- const heightVlueString= heightVlue.value;
- const heightVlueNumber= parseFloat(heightVlueString);
- heightVlue.value= "";
- 
- // base and height multipication
- const areaCalTotal= 0.5 * baseValueNumber * heightVlueNumber;
- return areaCalTotal;
-}
-
-
-function getAreaValues(valueBaseId, valueHeightId){
- // for base value
- const baseValue= document.getElementById(valueBaseId);
- const baseValueString= baseValue.value;
- const baseValueNumber= parseFloat(baseValueString);
- baseValue.value=""; 
-
- // for height value
- const heightVlue= document.getElementById(valueHeightId);
- const heightVlueString= heightVlue.value;
- const heightVlueNumber= parseFloat(heightVlueString);
- heightVlue.value= "";
-
- // base and height multipication
- const areaCalculation= baseValueNumber * heightVlueNumber;
- return areaCalculation;
-}
-
-
-
+// for triangel
 document.getElementById("triangle-calculate-btn").addEventListener("click", function(){
     
     const triAreaTotal= getArea("triangle-base-value", "triangle-height-value")
@@ -54,7 +17,7 @@ document.getElementById("triangle-calculate-btn").addEventListener("click", func
 
 
 
-
+// for rectanglur
 document.getElementById("rectanglur-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getAreaValues("rectanglur-base-value", "rectanglur-height-value")
@@ -70,6 +33,7 @@ document.getElementById("rectanglur-calculate-btn").addEventListener("click", fu
 
 })
 
+// for parallelogram
 document.getElementById("parallelogram-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getAreaValues("parallelogram-base-value", "parallelogram-height-value")
@@ -85,6 +49,7 @@ document.getElementById("parallelogram-calculate-btn").addEventListener("click",
 
 })
 
+// for rhombus
 document.getElementById("rhombus-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getArea("rhombus-base-value", "rhombus-height-value")
@@ -100,6 +65,7 @@ document.getElementById("rhombus-calculate-btn").addEventListener("click", funct
 })
 
 
+// for pentagon
 document.getElementById("pentagon-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getArea("pentagon-base-value", "pentagon-height-value")
@@ -115,7 +81,7 @@ document.getElementById("pentagon-calculate-btn").addEventListener("click", func
 })
 
 
-
+// for ellipse
 document.getElementById("ellipse-calculate-btn").addEventListener("click", function(){
 
    // for base value

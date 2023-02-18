@@ -12,7 +12,8 @@ function getArea(baseValueId, heightVlueId){
     heightVlue.value= "";
     
     // base and height multipication
-    const areaCalTotal= 0.5 * baseValueNumber * heightVlueNumber;
+    const areaCalTotalString= (0.5 * baseValueNumber * heightVlueNumber).toFixed(2);
+    const areaCalTotal = parseFloat(areaCalTotalString);
     return areaCalTotal;
    }
    
@@ -31,7 +32,25 @@ function getArea(baseValueId, heightVlueId){
     heightVlue.value= "";
    
     // base and height multipication
-    const areaCalculation= baseValueNumber * heightVlueNumber;
+    const areaCalculationString= (baseValueNumber * heightVlueNumber).toFixed(2);
+    const areaCalculation= parseFloat(areaCalculationString);
     return areaCalculation;
    }
    
+
+let countNo = 0;
+function displayData(nameOfGeometry, calculateValue){
+    countNo += 1;
+    const parent = document.getElementById('area-calculation');
+const tr = document.createElement('tr');
+tr.innerHTML = `
+<td>${countNo}</td>
+<td>${nameOfGeometry}</td>
+<td>${calculateValue} cm<sup>2</sup></td>
+<td>
+<button> Covert to m<sup>2</sup></button> 
+</td>
+`;
+
+parent.appendChild(tr);
+}

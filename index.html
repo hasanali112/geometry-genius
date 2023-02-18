@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body class="container">
+<body class="container-fluid">
     <header class="my-4">
         <nav class="navbar navbar-expand-lg bg-info px-2">
             <div class="container-fluid">
@@ -27,7 +27,7 @@
             </div>
         </nav>
     </header>
-    <main class="d-lg-flex">
+    <main class="d-lg-flex mb-5">
 
         <div>
             <div>
@@ -35,7 +35,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <!--geometry triangle card here -->
-                            <img src="images/triangle.png" class="card-img-top p-4" alt="triangle">
+                            <img src="images/triangle.png" class="card-img-top mx-auto w-50 pt-4" alt="triangle">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Triangle</h5>
                                 <p class="card-text text-center">Area (A) = 0.5 X b X h</p>
@@ -63,7 +63,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <!-- Geometry Rectangle -->
-                            <img src="images/rectangle.png" class="card-img-top p-4" alt="rectangle">
+                            <img src="images/rectangle.png" class="card-img-top mx-auto w-50 pt-4" alt="rectangle">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Rectangle</h5>
                                 <p class="card-text text-center">Area (A) = w X I</p>
@@ -91,7 +91,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <!-- Geometry paral -->
-                            <img src="images/parallelogram.png" class="card-img-top p-4" alt="parallelogram">
+                            <img src="images/parallelogram.png" class="card-img-top mx-auto w-50 pt-4" alt="parallelogram">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Parallelogram</h5>
                                 <p class="card-text text-center">Area (A) = b X h</p>
@@ -125,21 +125,21 @@
                     <div class="col">
                         <div class="card h-100">
                             <!--Rhombus triangle card here -->
-                            <img src="images/rhombus.png" class="card-img-top p-4" alt="rhombus">
+                            <img src="images/rhombus.png" class="card-img-top mx-auto w-50 pt-4" alt="rhombus">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Rhombus</h5>
                                 <p class="card-text text-center">Area (A) = 0.5 X d1 X d2</p>
                                 <div class="row px-3">
                                     <div class="col">
                                         <div class="d-flex align-items-center">
-                                            <input type="text" id="rhombus-base-value" class="form-control"
+                                            <input type="text" id="rhombus-base-value" class="form-control w-100"
                                                 placeholder="d1" aria-label="First name">
                                             <h5 class="ps-2">cm</h5>
                                         </div>
                                     </div>
                                     <div class="col">
                                         <div class="d-flex align-items-center">
-                                            <input type="text" id="rhombus-height-value" class="form-control"
+                                            <input type="text" id="rhombus-height-value" class="form-control w-100"
                                                 placeholder="d2" aria-label="First name">
                                             <h5 class="ps-2">cm</h5>
                                         </div>
@@ -153,7 +153,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <!-- Geometry Pentagon -->
-                            <img src="images/pentagon.png" class="card-img-top p-4" alt="Pentagon">
+                            <img src="images/pentagon.png" class="card-img-top mx-auto w-50 pt-4" alt="Pentagon">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Pentagon</h5>
                                 <p class="card-text text-center">Area (A) = 0.5 X p X b</p>
@@ -180,8 +180,8 @@
                     </div>
                     <div class="col">
                         <div class="card h-100">
-                            <!-- Geometry paral -->
-                            <img src="images/ellipse.png" class="card-img-top p-4" alt="parallelogram">
+                            <!-- Geometry ellipse -->
+                            <img src="images/ellipse.png" class="card-img-top mx-auto w-50 pt-4" alt="parallelogram">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Ellipse</h5>
                                 <p class="card-text text-center">Area (A) = πab</p>
@@ -212,8 +212,8 @@
 
 
         <!-- are calculation -->
-        <div class="ms-3">
-            <div class="card" style="width: 18rem;">
+        <div class="m-3 w-75">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Area Calculation</h5>
                     <div id="area-calculation-field">

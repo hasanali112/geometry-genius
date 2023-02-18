@@ -5,14 +5,7 @@ document.getElementById("triangle-calculate-btn").addEventListener("click", func
     
     const triAreaTotal= getArea("triangle-base-value", "triangle-height-value")
     //  show the value in area calculation
-    const areaCalculation = document.getElementById('area-calculation');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-    <td>1.</td>
-    <td>Triangle</td>
-    <td>${triAreaTotal} Cm<sup>2</sup></td>
-    `;
-    areaCalculation.appendChild(tr);
+    displayData("Triangle", triAreaTotal);
 })
 
 
@@ -22,14 +15,8 @@ document.getElementById("rectanglur-calculate-btn").addEventListener("click", fu
 
     const  areaCalculation= getAreaValues("rectanglur-base-value", "rectanglur-height-value")
     //  show the value in area calculation
-    const showCalculation = document.getElementById('area-calculation');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-    <td>2.</td>
-    <td>Rectangle</td>
-    <td>${areaCalculation} Cm<sup>2</sup></td>
-    `;
-    showCalculation.appendChild(tr);
+    displayData("Rectangle", areaCalculation);
+
 
 })
 
@@ -38,14 +25,7 @@ document.getElementById("parallelogram-calculate-btn").addEventListener("click",
 
     const  areaCalculation= getAreaValues("parallelogram-base-value", "parallelogram-height-value")
     //  show the value in area calculation
-    const showCalculation = document.getElementById('area-calculation');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-    <td>3.</td>
-    <td>Parallelogram</td>
-    <td>${areaCalculation} Cm<sup>2</sup></td>
-    `;
-    showCalculation.appendChild(tr);
+    displayData("Parallelogram", areaCalculation);
 
 })
 
@@ -54,14 +34,7 @@ document.getElementById("rhombus-calculate-btn").addEventListener("click", funct
 
     const  areaCalculation= getArea("rhombus-base-value", "rhombus-height-value")
     //  show the value in area calculation
-    const showCalculation = document.getElementById('area-calculation');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-    <td>4.</td>
-    <td>Rhombus</td>
-    <td>${areaCalculation} Cm<sup>2</sup></td>
-    `;
-    showCalculation.appendChild(tr);
+    displayData("Rhombus", areaCalculation);
 })
 
 
@@ -70,14 +43,7 @@ document.getElementById("pentagon-calculate-btn").addEventListener("click", func
 
     const  areaCalculation= getArea("pentagon-base-value", "pentagon-height-value")
     //  show the value in area calculation
-    const showCalculation = document.getElementById('area-calculation');
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-    <td>5.</td>
-    <td>Pentagon</td>
-    <td>${areaCalculation} Cm<sup>2</sup></td>
-    `;
-    showCalculation.appendChild(tr);
+    displayData("Pentagon", areaCalculation);
 })
 
 
@@ -97,16 +63,12 @@ document.getElementById("ellipse-calculate-btn").addEventListener("click", funct
  heightVlue.value= "";
  
  // base and height multipication
- const areaCalTotal= 3.14 * baseValueNumber * heightVlueNumber;
+ const areaCalTotalString= (3.14 * baseValueNumber * heightVlueNumber).toFixed(2);
+ const areaCalTotal= parseFloat(areaCalTotalString);
 
- //  show the value in area calculation
- const showCalculation = document.getElementById('area-calculation');
- const tr = document.createElement('tr');
- tr.innerHTML = `
- <td>6.</td>
- <td>Ellipse</td>
- <td>${areaCalTotal} Cm<sup>2</sup></td>
- `;
- showCalculation.appendChild(tr);
+ displayData("Ellipse", areaCalTotal);
 
 })
+
+
+    

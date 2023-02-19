@@ -56,7 +56,7 @@ tr.innerHTML = `
 <td>${nameOfGeometry}</td>
 <td>${calculateValue} cm<sup>2</sup></td>
 <td>
-<button> Covert to m<sup>2</sup></button> 
+<button class="btn btn-primary fs-6 "> Covert to m<sup>2</sup></button> 
 </td>
 `;
 

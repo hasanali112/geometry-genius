@@ -71,4 +71,7 @@ document.getElementById("ellipse-calculate-btn").addEventListener("click", funct
 })
 
 
-    
+document.getElementById("blog-btn").addEventListener("click", function(){
+  window.location.href="question.html"
+})
+

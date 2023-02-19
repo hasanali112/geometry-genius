@@ -4,17 +4,25 @@ function getArea(baseValueId, heightVlueId){
     const baseValueString= baseValue.value;
     const baseValueNumber= parseFloat(baseValueString);
     baseValue.value="";
+    
+    
+    
    
     // for height value
     const heightVlue= document.getElementById(heightVlueId);
     const heightVlueString= heightVlue.value;
     const heightVlueNumber= parseFloat(heightVlueString);
     heightVlue.value= "";
+    if (Number.isNaN(baseValueId, heightVlueId)) {
+        alert('Value is not a number');
+       ;
+    
+    } 
     
     // base and height multipication
     const areaCalTotalString= (0.5 * baseValueNumber * heightVlueNumber).toFixed(2);
-    const areaCalTotal = parseFloat(areaCalTotalString);
-    return areaCalTotal;
+     const areaCalTotal = parseFloat(areaCalTotalString);
+     return areaCalTotal;
    }
    
    
@@ -54,3 +62,4 @@ tr.innerHTML = `
 
 parent.appendChild(tr);
 }
+

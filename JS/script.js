@@ -106,3 +106,45 @@ document.getElementById("blog-btn").addEventListener("click", function(){
   window.location.href="question.html"
 })
 
+
+// Changing Random Color 
+const triangleField = document.getElementById("triangle-field");
+const rectangleField = document.getElementById("rectangle-field");
+const parallelogramField = document.getElementById("parallelogram-field");
+const rhombusField = document.getElementById("rhombus-field");
+const pentagonField = document.getElementById("pentagon-field");
+const ellipseField = document.getElementById("ellipse-field");
+
+function randomcolor() {
+    return Math.floor(Math.random() * 255);
+}
+triangleField .addEventListener('mouseenter', () => {
+    triangleField .style.backgroundColor = 'rgba('
+        + randomcolor() + ',' + randomcolor()
+        + ',' + randomcolor() + '\)'
+})
+rectangleField .addEventListener('mouseenter', () => {
+    rectangleField .style.backgroundColor = 'rgba('
+        + randomcolor() + ',' + randomcolor()
+        + ',' + randomcolor() + '\)'
+})
+parallelogramField.addEventListener('mouseenter', () => {
+    parallelogramField.style.backgroundColor = 'rgba('
+        + randomcolor() + ',' + randomcolor()
+        + ',' + randomcolor() + '\)'
+})
+rhombusField.addEventListener('mouseenter', () => {
+    rhombusField.style.backgroundColor = 'rgba('
+        + randomcolor() + ',' + randomcolor()
+        + ',' + randomcolor() + '\)'
+})
+pentagonField.addEventListener('mouseenter', () => {
+    pentagonField.style.backgroundColor = 'rgba('
+        + randomcolor() + ',' + randomcolor()
+        + ',' + randomcolor() + '\)'
+})
+ellipseField.addEventListener('mouseenter', () => {
+    ellipseField.style.backgroundColor = 'rgba('
+        + randomcolor() + ',' + randomcolor()
+        + ',' + randomcolor() + '\)'
+})

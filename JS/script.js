@@ -4,6 +4,13 @@
 document.getElementById("triangle-calculate-btn").addEventListener("click", function(){
     
     const triAreaTotal= getArea("triangle-base-value", "triangle-height-value")
+   
+    // validation check
+       const validation = triAreaTotal;
+       if(validation < 0 || isNaN(validation) === true ||validation == ''){
+        alert('Enter valid Number')
+        return validation;
+       }
     //  show the value in area calculation
     displayData("Triangle", triAreaTotal);
 })
@@ -14,6 +21,12 @@ document.getElementById("triangle-calculate-btn").addEventListener("click", func
 document.getElementById("rectanglur-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getAreaValues("rectanglur-base-value", "rectanglur-height-value")
+    // validation check
+    const validation = areaCalculation;
+       if(validation < 0 || isNaN(validation) === true ||validation == ''){
+        alert('Enter valid Number')
+        return validation;
+       }
     //  show the value in area calculation
     displayData("Rectangle", areaCalculation);
 
@@ -24,6 +37,12 @@ document.getElementById("rectanglur-calculate-btn").addEventListener("click", fu
 document.getElementById("parallelogram-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getAreaValues("parallelogram-base-value", "parallelogram-height-value")
+    // validation check
+       const validation = areaCalculation;
+       if(validation < 0 || isNaN(validation) === true ||validation == ''){
+        alert('Enter valid Number')
+        return validation;
+       }
     //  show the value in area calculation
     displayData("Parallelogram", areaCalculation);
 
@@ -33,6 +52,12 @@ document.getElementById("parallelogram-calculate-btn").addEventListener("click",
 document.getElementById("rhombus-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getArea("rhombus-base-value", "rhombus-height-value")
+    // validation check
+       const validation = areaCalculation;
+       if(validation < 0 || isNaN(validation) === true ||validation == ''){
+        alert('Enter valid Number')
+        return validation;
+       }
     //  show the value in area calculation
     displayData("Rhombus", areaCalculation);
 })
@@ -42,6 +67,12 @@ document.getElementById("rhombus-calculate-btn").addEventListener("click", funct
 document.getElementById("pentagon-calculate-btn").addEventListener("click", function(){
 
     const  areaCalculation= getArea("pentagon-base-value", "pentagon-height-value")
+    // validation check
+    const validation = areaCalculation;
+    if(validation < 0 || isNaN(validation) === true ||validation == ''){
+     alert('Enter valid Number')
+     return validation;
+    }
     //  show the value in area calculation
     displayData("Pentagon", areaCalculation);
 })
